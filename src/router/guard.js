@@ -21,9 +21,9 @@ export default function (to, from, next) {
         }
         if (toPage != 'l') {
             if (isLogin) {
-                next('/');//已登录转首页
+                next();//已登录转首页
             } else {
-                next(); //允许访问
+                next('/login'); //允许访问
             }
         }
     })
