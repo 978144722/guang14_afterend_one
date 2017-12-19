@@ -1,0 +1,23 @@
+// 从html到根组件, 高度都为100%
+html, body, main {
+    height: 100%;
+}
+
+// 修改router-link的默认样式
+.router-link-active {
+    text-decoration: none;
+    color: #fff;
+}
+
+// 设置表头背景
+.el-table thead  tr {
+    background-color: #ccc;
+}
+
+// 字体默认为浅灰
+[class^=el-icon-] {
+    color: rgba(0, 0, 0, 0.3);
+    &.active {
+        color: #000;
+    }
+}
